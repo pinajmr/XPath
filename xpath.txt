@@ -1,0 +1,4 @@
+Links = //h3/a/@href
+Title = //header/h1[@class="entry-title"]/text()
+Summary = //header/p/text()
+Body = //div[contains(@class,"td-post-content")]/p/text()
