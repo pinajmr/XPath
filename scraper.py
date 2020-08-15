@@ -67,6 +67,7 @@ def parse_home():
 
 
 def run():
+    print("1")
     parse_home()
 
 
