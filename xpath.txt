@@ -1,4 +1,12 @@
+Tags 04-0820
+
 Links = //h3/a/@href
 Title = //header/h1[@class="entry-title"]/text()
 Summary = //header/p/text()
 Body = //div[contains(@class,"td-post-content")]/p/text()
+
+Tags 04-08-20
+Links = //h3/a/@href
+Title = //header/h1[@class="entry-title"]/text()
+Summary = //header/p/text()
+Body = //div[contains(@class,"td-post-content")]/p//text() 

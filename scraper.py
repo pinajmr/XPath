@@ -9,7 +9,7 @@ HOME_URL = 'https://www.notitarde.com/'
 XPATH_LINK_TO_ARTICLE ='//h3/a/@href'
 XPATH_TITLE = '//header/h1[@class="entry-title"]/text()'
 XPATH_SUMMARY = '//header/p/text()'
-XPATH_BODY = '//div[contains(@class,"td-post-content")]/p/text()'
+XPATH_BODY = '//div[contains(@class,"td-post-content")]/p//text() '
 
 def parse_notice(link,today):
     try:
@@ -67,10 +67,8 @@ def parse_home():
 
 
 def run():
-    print("1")
     parse_home()
 
 
 if __name__ == '__main__':
-    print("Star Scraping")
     run()
